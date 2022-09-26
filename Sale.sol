@@ -2,12 +2,12 @@
 
 pragma solidity 0.8.9;
 
-import "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
-import "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol";
+import "./IERC20Upgradeable.sol";
+import "./AddressUpgradeable.sol";
+import "./Initializable.sol";
+import "./ContextUpgradeable.sol";
+import "./OwnableUpgradeable.sol";
+import "./ReentrancyGuardUpgradeable.sol";
 
 interface Aggregator {
     function latestRoundData()
